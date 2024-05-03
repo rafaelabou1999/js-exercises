@@ -1,0 +1,160 @@
+.instruction{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 300;
+    font-size: 2.5rem;
+    width:250px;
+    margin-left: 6%;
+    margin-top: 5%;
+    background-color: aliceblue;
+    border: 1px solid salmon;
+    padding: 1.4%;
+}
+
+
+.active{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.233);
+    z-index:100;
+}
+
+.active .dogs img:hover{
+    filter:grayscale(10%);
+    transform: scale(1.0);
+    box-shadow: 0;
+}
+.dogs{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2, 370px);
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 10;
+    transform:translate(-50%,-50%)
+}
+.dogs img{
+    width:250px;
+    height:280px;
+    object-fit: cover;
+    opacity: .9;
+    filter:grayscale(100%);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.35);
+}
+
+.dogs img:hover{
+    filter:grayscale(10%);
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.icon {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap:2%;
+  font-family: sans-serif;
+  color:rgb(59, 57, 59);
+}
+
+
+    
+h2{
+    font-size: 1.2rem;
+   
+}
+
+.dogs img::after{
+    content: "olavtghyvd";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:150px;
+    height:150px;
+    font-size: 10rem;
+    background-color: red;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.dogs img:hover::after{
+    opacity: 1;
+}
+
+.content{
+    display: none;
+    width:370px;
+    padding:2%;
+    height:300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+    border-radius: 10%;
+}
+
+.content h2{
+    border-bottom: 5px solid salmon;
+    width:25px;
+    padding-bottom: 2%;
+}
+
+footer{
+    position: fixed;
+    z-index: 200;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-top: 2px solid salmon;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:1100px){
+    .instruction{
+        font-size: 1.5rem;
+        position: absolute;
+        left:50%;
+        top:4%;
+        transform: translateX(-60%);
+        margin-left: 0%;
+    }
+
+    
+    .dogs{
+        display: grid;
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(4, 370px);
+        position: absolute;
+        top:25%;
+        left:50%;
+        z-index: 10;
+        transform:translate(-50%,0%)
+    }
+
+    .content{
+        display: none;
+        width:min(80vw, 350px);
+        padding:5%;
+        height:300px;
+        background-color: rgb(255, 255, 255);
+        position: fixed !important;
+        top:50%;
+        left:50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transform: translate(-50%,-50%);
+        z-index: 200;
+        border-radius: 10%;
+    }
+    
+}
