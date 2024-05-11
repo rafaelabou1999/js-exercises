@@ -5,3 +5,7 @@ __JS Exercises__
 
 - Tooltip - Deploy
   - https://6635497fa93f244ed4cbe63e--chipper-lamington-1aaa86.netlify.app/
+
+<hr>
+- Fetch api - Deploy
+ - https://663ffed9d531b6475ff14d7f--sweet-swan-5fa0c3.netlify.app/
