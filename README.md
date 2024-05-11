@@ -8,5 +8,6 @@ __JS Exercises__
 
 <hr>
 
-- Fetch api - Deploy
+- Fetch - Deploy
   - https://663ffed9d531b6475ff14d7f--sweet-swan-5fa0c3.netlify.app/
+    
